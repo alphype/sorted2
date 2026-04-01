@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-US">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" />
+        <title>My test page</title>
+
+        <script src="JS Libraries/p5.min.js"></script>
+        
+        <script src="script.js" defer></script>
+        
+
+        <link rel="stylesheet" href="JS.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    </head>
+
+    <body> 
+        <div class="gridOfPictures">
+            <img id="first-blocks" src="Resources/Blocks.png">
+            <img id="second-blocks" src="Resources/Blocks.png">
+            <img id="third-blocks" src="Resources/Blocks.png">
+            <img id="fourth-blocks" src="Resources/Blocks.png">
+        </div>
+
+        <div id="lastItem" class="flex-container">
+
+            <div id="header">
+                <h1>Sort<sup>2</sup></h1>
+            </div>
+
+            <img id="first-arrow" class="arrow" src="Resources/Arrow.svg">
+
+            <div class="sort-list">
+                <fieldset id="sort-type-container">
+
+                    <legend>Select sort method</legend>
+
+                    <div>
+                        <input id="insertionSort" type="radio" name="sortType">
+                        <label for="insertionSort">Insertion Sort</label>
+                    </div>
+                    
+                    <div>
+                        <input id="mergeSort" type="radio" name="sortType">
+                        <label for="mergeSort">Merge Sort</label>
+                    </div>
+
+                    <!--
+                    <div>
+                        <input id="quickSort" type="radio" name="sortType">
+                        <label for="quickSort">Quick Sort</label>
+                    </div>
+                    -->
+                    
+                    <div>
+                        <input id="bubbleSort" type="radio" name="sortType">
+                        <label for="bubbleSort">Bubble Sort</label>
+                    </div>
+                    
+                    <div>
+                        <input id="selectionSort" type="radio" name="sortType">
+                        <label for="selectionSort">Selection Sort</label>
+                    </div>
+                </fieldset>
+
+                <img id="second-arrow" class="arrow" src="Resources/Arrow.svg">
+
+                <div id="medium-box" class="flex-container">
+                    <p>Your list of numbers:</p>
+                    <input id="myInput" type="text">
+                    <button id="submitButton">Sort</button>
+                </div>
+
+                <img id="third-arrow" src="Resources/Arrow.svg">
+
+                <div id="p5"></div>
+                
+                <img id="fourth-arrow" src="Resources/Arrow.svg">
+                
+                <div id="smallest-box">
+                    <p id="sortedLabel">Sorted list:</p>
+                </div>
+
+            </div>
+            <img id="plus" src="Resources/plus.svg">
+            <a href="https://substack.com/@alphype"><img id="profilePic" src="Resources/ProfilePic.png"></a>
+
+        </div> 
+        
+        
+    </body>
+</html>
